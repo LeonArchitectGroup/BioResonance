@@ -27,8 +27,8 @@ const ContactSection = () => {
   };
 
   const contactInfo = [
-    { icon: Phone, label: "Phone", value: "+30 697 755 9966", href: "tel:+306977559966" },
-    { icon: Mail, label: "Email", value: "Leon@leonarchitectgroup.com", href: "mailto:Leon@leonarchitectgroup.com" },
+    { icon: Phone, label: "Phone", value: "+30 697 979 3648", href: "tel:+306979793648" },
+    { icon: Mail, label: "Email", value: "ilonastefanidou@yahoo.com", href: "mailto:ilonastefanidou@yahoo.com" },
     { icon: MapPin, label: "Location", value: "Ίου 3, Αθήνα, 11251, Ελλάδα", href: "#" },
     { icon: Clock, label: "Hours", value: "Mon-Fri: 9AM-6PM", href: "#" },
   ];

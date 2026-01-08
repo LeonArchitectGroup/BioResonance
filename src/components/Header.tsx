@@ -67,9 +67,9 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:+306977559966" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+            <a href="tel:+306979793648" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
               <Phone className="w-4 h-4" />
-              <span className="hidden lg:inline">+30 697 755 9966</span>
+              <span className="hidden lg:inline">+30 697 979 3648</span>
             </a>
             <Button variant="hero" size="default" asChild>
               <a href="#contact">Book Consultation</a>
@@ -112,9 +112,9 @@ const Header = () => {
                   <Phone className="w-4 h-4" />
                   +30 697 755 9966
                 </a>
-                <a href="mailto:Leon@leonarchitectgroup.com" className="flex items-center gap-2 text-muted-foreground">
+                <a href="mailto:ilonastefanidou@yahoo.com" className="flex items-center gap-2 text-muted-foreground">
                   <Mail className="w-4 h-4" />
-                  Leon@leonarchitectgroup.com
+                  ilonastefanidou@yahoo.com
                 </a>
                 <Button variant="hero" className="mt-2" asChild>
                   <a href="#contact">Book Consultation</a>
