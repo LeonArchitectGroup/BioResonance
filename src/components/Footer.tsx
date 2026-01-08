@@ -80,20 +80,20 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-sage-400" />
-                <a href="tel:+1234567890" className="text-sage-300 hover:text-sage-50 transition-colors text-sm">
-                  +1 234 567 890
+                <a href="tel:+306977559966" className="text-sage-300 hover:text-sage-50 transition-colors text-sm">
+                  +30 697 755 9966
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-sage-400" />
-                <a href="mailto:info@bioresonance.com" className="text-sage-300 hover:text-sage-50 transition-colors text-sm">
-                  info@bioresonance.com
+                <a href="mailto:Leon@leonarchitectgroup.com" className="text-sage-300 hover:text-sage-50 transition-colors text-sm">
+                  Leon@leonarchitectgroup.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-sage-400 mt-0.5" />
                 <span className="text-sage-300 text-sm">
-                  123 Wellness Center,<br />Medical District
+                  Ίου 3, Αθήνα, 11251, Ελλάδα
                 </span>
               </li>
             </ul>

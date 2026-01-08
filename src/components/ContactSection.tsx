@@ -27,9 +27,9 @@ const ContactSection = () => {
   };
 
   const contactInfo = [
-    { icon: Phone, label: "Phone", value: "+1 234 567 890", href: "tel:+1234567890" },
-    { icon: Mail, label: "Email", value: "info@bioresonance.com", href: "mailto:info@bioresonance.com" },
-    { icon: MapPin, label: "Location", value: "123 Wellness Center, Medical District", href: "#" },
+    { icon: Phone, label: "Phone", value: "+30 697 755 9966", href: "tel:+306977559966" },
+    { icon: Mail, label: "Email", value: "Leon@leonarchitectgroup.com", href: "mailto:Leon@leonarchitectgroup.com" },
+    { icon: MapPin, label: "Location", value: "Ίου 3, Αθήνα, 11251, Ελλάδα", href: "#" },
     { icon: Clock, label: "Hours", value: "Mon-Fri: 9AM-6PM", href: "#" },
   ];
 

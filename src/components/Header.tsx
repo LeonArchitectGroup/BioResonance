@@ -67,9 +67,9 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:+1234567890" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+            <a href="tel:+306977559966" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
               <Phone className="w-4 h-4" />
-              <span className="hidden lg:inline">+1 234 567 890</span>
+              <span className="hidden lg:inline">+30 697 755 9966</span>
             </a>
             <Button variant="hero" size="default" asChild>
               <a href="#contact">Book Consultation</a>
@@ -108,13 +108,13 @@ const Header = () => {
                 </a>
               ))}
               <div className="flex flex-col gap-3 pt-4 border-t border-border">
-                <a href="tel:+1234567890" className="flex items-center gap-2 text-muted-foreground">
+                <a href="tel:+306977559966" className="flex items-center gap-2 text-muted-foreground">
                   <Phone className="w-4 h-4" />
-                  +1 234 567 890
+                  +30 697 755 9966
                 </a>
-                <a href="mailto:info@bioresonance.com" className="flex items-center gap-2 text-muted-foreground">
+                <a href="mailto:Leon@leonarchitectgroup.com" className="flex items-center gap-2 text-muted-foreground">
                   <Mail className="w-4 h-4" />
-                  info@bioresonance.com
+                  Leon@leonarchitectgroup.com
                 </a>
                 <Button variant="hero" className="mt-2" asChild>
                   <a href="#contact">Book Consultation</a>
