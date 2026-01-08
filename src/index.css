@@ -1,0 +1,237 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Elegant sage & rose palette for women's health */
+    --background: 45 30% 98%;
+    --foreground: 220 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 15%;
+
+    /* Sage green - represents growth, fertility, healing */
+    --primary: 150 25% 35%;
+    --primary-foreground: 45 30% 98%;
+
+    /* Soft rose - femininity, warmth, care */
+    --secondary: 350 35% 92%;
+    --secondary-foreground: 350 25% 35%;
+
+    --muted: 150 15% 94%;
+    --muted-foreground: 220 15% 45%;
+
+    /* Warm gold accent - premium, professional */
+    --accent: 38 55% 50%;
+    --accent-foreground: 45 30% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 150 15% 88%;
+    --input: 150 15% 88%;
+    --ring: 150 25% 35%;
+
+    --radius: 0.75rem;
+
+    /* Custom design tokens */
+    --sage-50: 150 25% 97%;
+    --sage-100: 150 25% 94%;
+    --sage-200: 150 25% 85%;
+    --sage-300: 150 25% 65%;
+    --sage-400: 150 25% 45%;
+    --sage-500: 150 25% 35%;
+    --sage-600: 150 30% 28%;
+    --sage-700: 150 35% 20%;
+
+    --rose-50: 350 40% 98%;
+    --rose-100: 350 35% 95%;
+    --rose-200: 350 35% 90%;
+    --rose-300: 350 35% 80%;
+    --rose-400: 350 30% 60%;
+    --rose-500: 350 25% 45%;
+
+    --gold-50: 38 60% 97%;
+    --gold-100: 38 60% 90%;
+    --gold-200: 38 55% 75%;
+    --gold-300: 38 55% 60%;
+    --gold-400: 38 55% 50%;
+    --gold-500: 38 50% 40%;
+
+    --cream: 45 30% 96%;
+    --cream-dark: 45 25% 92%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--sage-50)) 0%, hsl(var(--rose-50)) 50%, hsl(var(--gold-50)) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(var(--sage-50)) 100%);
+    --gradient-sage: linear-gradient(135deg, hsl(var(--sage-400)) 0%, hsl(var(--sage-600)) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(var(--gold-300)) 0%, hsl(var(--gold-500)) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(var(--sage-500) / 0.1);
+    --shadow-card: 0 8px 30px -8px hsl(var(--sage-500) / 0.12);
+    --shadow-elevated: 0 20px 50px -15px hsl(var(--sage-600) / 0.18);
+
+    /* Typography */
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Montserrat', system-ui, sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 25% 8%;
+    --foreground: 45 30% 95%;
+
+    --card: 220 25% 12%;
+    --card-foreground: 45 30% 95%;
+
+    --popover: 220 25% 12%;
+    --popover-foreground: 45 30% 95%;
+
+    --primary: 150 30% 50%;
+    --primary-foreground: 220 25% 8%;
+
+    --secondary: 350 20% 20%;
+    --secondary-foreground: 350 35% 85%;
+
+    --muted: 220 20% 18%;
+    --muted-foreground: 220 15% 60%;
+
+    --accent: 38 50% 55%;
+    --accent-foreground: 220 25% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 150 30% 50%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-sage);
+  }
+
+  .bg-hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .bg-card-gradient {
+    background: var(--gradient-card);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .container-custom {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from { 
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from { 
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to { 
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
