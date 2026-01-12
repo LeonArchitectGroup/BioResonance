@@ -182,6 +182,11 @@ const CapabilitiesSection = () => {
               </div>
             </div>
             <div className="bg-sage-50 rounded-2xl p-6">
+              <img
+                src="/images/ISHA-Metahunter-4025.jpg"
+                alt="Machine photo placeholder"
+                className="mx-auto mb-4 w-full max-w-xs rounded-lg object-cover"
+              />
               <h4 className="font-serif font-semibold text-foreground mb-4">What Can Be Tested:</h4>
               <ul className="space-y-3">
                 {[
